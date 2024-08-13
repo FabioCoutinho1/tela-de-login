@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+/* paelta de cores
+
+    roxo #9918F2
+
+ */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body, html{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(248, 248, 248);
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.login{
+    min-height: 95%;
+    min-width: 95%;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.205);
+    text-align: center;
+    transition: width .5s, height .5s ;
+    transition-timing-function: ease;
+}
+
+div.formulario > form > h1{
+    margin-bottom: 70px;
+    margin-top: 40px;
+    font-size: 3.5em;
+    color: #9918F2;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.432);
+    font-weight: bolder;
+}
+
+form > div.campo{
+    background-color: rgb(248, 248, 248);
+    width: 100%;
+    height: 60px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px;
+    padding-right: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.144);
+}
+
+
+form > div.campo > input{
+    width: 100%;
+    background-color: rgb(248, 248, 248);
+    border: none;
+    border-radius: 60px;
+    padding: 15px;
+    font-size: 1.3em;
+    outline: none;
+}
+
+form >div.campo > span{
+    color: #9918F2;
+    font-size: 2em;
+}
+
+form > div.check{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+}
+
+
+form input#ilembrar{
+    display: none;
+}
+
+form input#ilembrar  + label::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 1px solid #9918F2;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+}
+
+form input#ilembrar:checked  + label::before{
+    background-image: url("data:image/svg+xml,%3Csvg height='20px' width='20px' version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='-1.78 -1.78 21.40 21.40' xml:space='preserve' fill='%23ffffff' stroke='%23ffffff'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cg%3E%3Cpath style='fill:%23ffffff;' d='M16.145,2.571c-0.272-0.273-0.718-0.273-0.99,0L6.92,10.804l-4.241-4.27 c-0.272-0.274-0.715-0.274-0.989,0L0.204,8.019c-0.272,0.271-0.272,0.717,0,0.99l6.217,6.258c0.272,0.271,0.715,0.271,0.99,0 L17.63,5.047c0.276-0.273,0.276-0.72,0-0.994L16.145,2.571z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: #9918F2;
+}
+
+form div.check > a{
+    text-decoration: none;
+    color: #9918F2;
+}
+
+form div.check > a:hover{
+    color: #7112b1;
+}
+
+form  input[type=submit]{
+    width: 100%;
+    height: 70px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 30px;
+    background-color: #9918F2;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.144);
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form  input[type=submit]:hover{
+    opacity: 0.7;
+}
+
+form > p.cadastro{
+    font-size: 1.2em;
+}
+
+form > p.cadastro > a{
+    text-decoration: none;
+    color: #9918F2;
+}
+
+form > p.cadastro > a:hover{
+    color: #7112b1;
+}

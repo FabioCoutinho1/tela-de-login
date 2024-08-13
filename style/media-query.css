@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 996px) {
+    section.login{
+        min-height: 750px;
+        min-width: 600px;
+
+    }
+    
+}
+
+@media screen and (min-width: 998px){
+
+
+    section.login{
+        min-height: 750px;
+        min-width: 600px;
+    }
+
+}

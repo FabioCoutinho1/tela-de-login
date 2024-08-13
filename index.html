@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+</head>
+<body>
+    <main>
+        <section class="login">
+            <div class="formulario">
+                <form action="longin.php" method="post" autocomplete="on">
+                    <h1>Login</h1>
+
+                    <div class="campo">
+                        <label for="inome"></label>
+                        <input type="text" name="name" id="inome" minlength="10" maxlength="50" placeholder="Usuário" autocomplete="name" required>
+
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="isenha"></label>
+                        <input type="password" name="senha" id="isenha" minlength="8" maxlength="20" placeholder="Senha" autocomplete="current-password" required>
+                        
+                        <span class="material-symbols-outlined">
+                            key
+                        </span>
+                    </div>
+
+                    <div class="check">
+                        <div class="lembrar">
+                            <input type="checkbox" name="lembrar" id="ilembrar">
+                            <label for="ilembrar">Lembre-me</label>
+                        </div>
+                        
+                        <a href="#">Esqueceu a Senha?</a>
+                    </div>
+
+                    <input type="submit" value="Entrar">
+
+                    <p class="cadastro">
+                        Não possui conta <a href="#">Cadastre-se</a>
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

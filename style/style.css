@@ -32,7 +32,7 @@ section.login{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 95%;
+    height: 95%;
     width: 95%;
     padding: 20px;
     border-radius: 40px;

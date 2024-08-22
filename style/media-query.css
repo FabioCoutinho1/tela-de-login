@@ -2,8 +2,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 996px) {
     section.login{
-        min-height: 500px;
-        min-width: 450px;
+        max-height: 500px;
+        max-width: 450px;
 
     }
     
@@ -13,8 +13,8 @@
 
 
     section.login{
-        min-height: 500px;
-        min-width: 450px;
+        max-height: 500px;
+        max-width: 450px;
     }
 
 }
